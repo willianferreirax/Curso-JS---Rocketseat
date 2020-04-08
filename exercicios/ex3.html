@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <div class="app">
+        <ul id="list">
+
+        </ul>
+    </div>
+
+    <script> 
+        var nomes = ['Diego', 'Gabriel', 'Lucas']
+        var item,text;
+        var ul = document.getElementById('list')
+        for (let i = 0; i < 3; i++) {
+            
+            item = document.createElement('li')
+            text = document.createTextNode(nomes[i])
+            item.appendChild(text)
+            
+            ul.appendChild(item)
+
+        }
+        
+    </script>
+</body>
+</html>
